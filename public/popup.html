@@ -29,8 +29,8 @@
     var username = document.querySelector("#username").value;
     var password = document.querySelector("#password").value;
     var authData = {
-      username,
-      password
+      'username': username,
+      'password': password
     };
     window.opener.postMessage(authData, "http://localhost:3000");
     window.close();
